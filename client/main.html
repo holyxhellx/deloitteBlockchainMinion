@@ -1,0 +1,48 @@
+<head>
+  <title>sammenHoldet</title>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="http://ethereum.github.io/browser-solidity/#version=soljson-v0.4.10+commit.f0d539ae.js">Solidity</a>
+    <a href="#about">About</a>
+    <a href="http://asbp.frwaw.itu.dk/questionnaire.html">Questionnaire</a>
+    <a href="">Home</a>
+  </div>
+  <section class="featured colored-banner orange single-title">
+    <div class="container">
+      <div class="row">
+        <div class="text-block col-lg-8 offset-lg-2">
+          <h1>
+            Team Blockchain-minion
+          </h1>
+          <div style="margin-bottom:-10px;margin-left:10px" class="footer-info col-md-4">
+            <h5>© 2017 #goneHacking Frederikke, Mads, Mathias & Asger</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    {{> Account}}
+    {{> Will}}
+  </section>
+</body>
+
+<template name="Account">
+  <div class="topnav" id="myTopnav">
+    <button class = "person2">Bob (schoolmate)</button>
+    <button class = "person1">Alice (sister) </button>
+    <button class = "patient">Patient</button>
+  </div>
+  <p>Current owner of the data: {{account}} {{TemplateVar.get "account"}} </p>
+  <p>[Insert PublicKey = PeopleName]</p>
+</template>
+
+<template name="Will">
+  <div>
+    <button class="viewWill">Show</button>
+    <button class="alterWill">Save</button>
+    <textarea rows="7" cols="40" id="textareaWill" placeholder='Collect or Create a "Patients Will"'></textarea>
+  </div>
+</template>  
+
